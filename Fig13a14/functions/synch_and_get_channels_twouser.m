@@ -138,7 +138,7 @@ function [chan_est_struct,snr_db,ret_val] = synch_and_get_channels_twouser(meta_
         chan_est_struct.babf_switched_mat = eye(num_ants);
     else
         babf_switched_mat = analog_beamf_config_choser(babf_chan_mat',num_ants,1:1:num_ants,pi/2);
-        chan_est_struct.babf_switched_mat = 2*babf_switched_mat-1;
+        chan_est_struct.babf_switched_mat = babf_switched_mat;
     end
 
     

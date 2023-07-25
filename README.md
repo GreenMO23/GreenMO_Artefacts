@@ -22,7 +22,7 @@ In order to reproduce the results in the paper (Figs 9-14), you would need to do
 Please use ["FDT"](http://monalisa.cern.ch/FDT/download.html) to make the data transfer faster (usually takes about 5 minutes). You would need to setup Java JDK on your machine to run FDT (usually pre-installed on linux, for windows follow this [link](https://www.oracle.com/java/technologies/downloads/#jdk20-windows)). Open the command window and navigate to location where you have the "fdt.jar" file and run the following command to get the data required for artefact evaluation of GreenMO:
 
 
->  java -jar fdt.jar -p 54323 -pull -r -c 137.110.115.35 -r -d ./ /home/agrim/GreenMO_IQ_Data
+>  java -jar fdt.jar -p 54323 -pull -r -c 137.110.115.35 -r -d ./ /home/comsol_account/GreenMO_IQ_Data
 
 Alternately, you can download from google drive: [link](https://drive.google.com/file/d/1eQUOTNBp6XQSZd0G7gYAEmD84t4tqREl/view?usp=sharing). There might be some issues with local firewalls which may prevent binding to the FDT port. However, you would need to be patient, since the zip file downloaded from google is about 18 GB and depending on your internet connection it can take anywhere between 30-60 mins to download the zip file.
 

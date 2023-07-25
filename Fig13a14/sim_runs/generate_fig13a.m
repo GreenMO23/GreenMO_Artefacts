@@ -72,4 +72,4 @@ title("")
 
 timestamp = datestr(now,'mm_dd_HH_MM');
 %%
-save("./IA_hwr_repo/simulations/Data/10_unsynch_evalrun_64ants_"+timestamp+".mat","sinr_mat_evals","eval_params_all","algo_mask")
+save("./Data/10_unsynch_evalrun_64ants_"+timestamp+".mat","sinr_mat_evals","eval_params_all","algo_mask")
