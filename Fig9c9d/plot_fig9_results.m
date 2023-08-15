@@ -1,6 +1,6 @@
 % The Script takes about 2 minutes to run
 clear all
-data_dir = "C:\ag_data2\trace_evals";
+data_dir = "/home/user/GreenMO_IQ_Data/trace_evals";
 config = "dbf"; % for Fig 9c
 %config = "hbf"; % for Fig 9d
 if(config == "dbf")
@@ -23,6 +23,7 @@ for expmt_idx = 1:1:numel(expmt_inds)
     all_sinrs = [];
     % Loop through the 10 positions
     expmt_ind = expmt_inds(expmt_idx);
+    expmt_mode = legend_str(expmt_idx);
     disp("Beginning to process Data for: "+expmt_mode)
     for posn_index = posn_indexes
         % Each config is tested 3 times
@@ -36,7 +37,7 @@ for expmt_idx = 1:1:numel(expmt_inds)
         
 
         all_sinrs = [all_sinrs avg_sinr_across_users];
-        expmt_mode = legend_str(expmt_idx);
+        
     
     end
     disp("Finished Processing Data for: "+expmt_mode)
